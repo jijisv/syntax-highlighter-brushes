@@ -1,4 +1,4 @@
-syntax-highlighter-brushes
-==========================
+Brushes for Syntax Highlighter
+==============================
 
-syntax-highlighter-brushes
+
