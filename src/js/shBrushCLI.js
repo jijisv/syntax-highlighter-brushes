@@ -1,5 +1,5 @@
 /**
- * SyntaxHighlighter Brush for Command Line
+ * SyntaxHighlighter Brush for Command Line Interface
  * 
  * @copyright
  * Copyright (C) 2014 Jiji Sasidharan.
@@ -11,7 +11,7 @@
 	function Brush() {
 		this.regexList = [
 					{ regex: /^.*(&gt;|>|\$|\#)/gm, 				css: 'color2' },
-				]
+				];
 	};
 
 	Brush.prototype	= new SyntaxHighlighter.Highlighter();
