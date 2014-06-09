@@ -10,7 +10,8 @@
 
 	function Brush() {
 		this.regexList = [
-		      { regex: /^[\w\s@\/\\:]*(&gt;|>|\#|\$)+/gm,             css: 'color2' },
+				{ regex: /^[\w\s@\/\\:]*(&gt;|>|\#|\$)+/gm,                 css: 'color2' },
+				{ regex: /^(?:(?!(^[\w\s@\/\\:]*(&gt;|>|\#|\$)+)).)*$/gm,   css: 'color1' }
 						 ];
 	};
 
