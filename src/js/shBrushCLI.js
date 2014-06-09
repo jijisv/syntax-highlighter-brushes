@@ -10,8 +10,8 @@
 
 	function Brush() {
 		this.regexList = [
-					{ regex: /^.*(&gt;|>|\$|\#)/gm, 				css: 'color2' },
-				];
+		      { regex: /^[\w\s@\/\\:]*(&gt;|>|\#|\$)+/gm,             css: 'color2' },
+						 ];
 	};
 
 	Brush.prototype	= new SyntaxHighlighter.Highlighter();
