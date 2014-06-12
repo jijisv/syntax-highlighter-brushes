@@ -1,0 +1,9 @@
+/**
+ * Custom Syntax Highlighter Brushes 
+ * http://programmingforliving.com
+ * Version <%= version %> (<%= date %>)
+ *
+ * Copyright (C) 2014 Jiji Sasidharan
+ * Licensed under the GPL license.
+ */
+ 
