@@ -1,5 +1,5 @@
 path = require('path');
-ejs = require('ejs');
+ejs  = require('ejs');
 
 getFileHeader = function(grunt, pkg) {
 	return ejs.render(grunt.file.read("src/header.txt", 'utf8'), {
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 				banner: '<%= getFileHeader(grunt, pkg) %>'
 			},
 			dist : {
-				files : grunt.file.expandMapping([ '**/*.js' ], 'release/', {
+				files : grunt.file.expandMapping(['**/*.js'], 'release/', {
 					cwd : "src",
 					rename : function(destBase, matchedSrcPath) {
 						return path.join(destBase, matchedSrcPath).replace('.js', '.min.js');
@@ -27,5 +27,5 @@ module.exports = function(grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.registerTask('default', [ 'uglify' ]);
+	grunt.registerTask('default', ['uglify']);
 };
